@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰山渡假飯店，來去刀山火海住一晚</title>
+    <link rel="stylesheet" href="plugins/bootstrap.min.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- google font字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/style.css">
+
+    <script src="https://kit.fontawesome.com/b6159c26a6.js" crossorigin="anonymous"></script> <!-- font awesome -->
+    <script src="plugins/jquery-3.5.1.min.js"></script>
+    <script src="plugins/bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
+
+</head>
+
+<body>
+    <!-- 選單區 -->
+    <header class="fixed-top" id="head">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="./">泰山地獄飯店</a> <!-- "/"指向到跟目錄 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#room"><i class="fas fa-bed"></i>房型介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facility"><i class="fas fa-gamepad"></i>服務設施</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food"><i class="fas fa-utensils"></i>餐飲美食</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trans"><i class="fas fa-map-marker-alt"></i>交通資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="far fa-envelope"></i>連絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- 輪播區 -->
+    <section id="slider" class="carousel slide carousel-fade " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item vh-100 active">
+                <img src="https://picsum.photos/1920/1000/?random=1" class="h-100 w-100">
+                <div class="carousel-caption d-flex flex-column justify-content-center">
+                    <h1>First slide label</h1>
+                    <p class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="https://picsum.photos/1920/1000/?random=2" class="h-100 w-100">
+                <div class="carousel-caption d-flex flex-column justify-content-center">
+                    <h1>Second slide label</h1>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="https://picsum.photos/1920/1000/?random=3" class="h-100 w-100">
+                <div class="carousel-caption d-flex flex-column justify-content-center">
+                    <h1>Third slide label</h1>
+                    <p class="d-none d-md-block">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider" data-slide="prev">
+            <i class="fas fa-long-arrow-alt-left fa-3x"></i>
+        </a>
+        <a class="carousel-control-next" href="#slider" data-slide="next">
+            <i class="fas fa-long-arrow-alt-right fa-3x"></i>
+        </a>
+    </section>
+    <!-- 房型介紹 -->
+    <section id="room" class="container py-5">
+        <header>
+            <h2 class="text-info pb-3 text-center">房型介紹</h2>
+            <nav class="nav nav-tabs justify-content-around">
+                <a class="nav-link alert-info text-muted active" data-toggle="tab" href="#roomA">精緻客房</a>
+                <a class="nav-link alert-info text-muted" data-toggle="tab" href="#roomB">豪華家庭房</a>
+                <a class="nav-link alert-info text-muted" data-toggle="tab" href="#roomC">蜜月湯屋</a>
+                <a class="nav-link alert-info text-muted" data-toggle="tab" href="#roomPrice">價目表</a>
+                <a class="nav-link alert-info text-muted" data-toggle="tab" href="#roomRule">訂房須知</a>
+            </nav>
+        </header>
+        <aritile class="tab-content py-5">
+            <div class="row tab-pane fade show active" id="roomA">
+                <p class="col-12 text-muted my-5 text-center">
+                    以白與棕色系為基調，整片海景落地窗，可以遠眺寬闊的海平面，閱覽大自然的生動畫作，12坪的空間大小，擁有柔軟舒適兩張<br>
+                    單人床組、乾溼分離的獨立衛浴、精緻貼心的Mini bar、免費寬頻網路等等各項設備，讓旅人一踏進那刻起，輕鬆寫意。</p>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>精緻客房</h5>
+                            <p class="card-text">精緻雙人房<small class="txet-muted">| 2小床</small></p>
+                            <p class="float-right text-danger">$ 1,999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>精緻客房</h5>
+                            <p class="card-text">雅致雙人房<small class="txet-muted">| 1大床</small></p>
+                            <p class="float-right text-danger">$ 1,999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>精緻客房</h5>
+                            <p class="card-text">溫馨四人房<small class="txet-muted">| 1大床</small></p>
+                            <p class="float-right text-danger">$ 1,999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row tab-pane fade" id="roomB">
+                <p class="col-12 text-muted my-5 text-center">為家庭出遊量身打造的豪華套房，獨立低調質感的客廳空間，客房面向H會館獨家絕美海景，景緻廣闊宜人且設施齊全，<br>
+                    獨立的兩張雙人床、兩張單人床，讓每個人都有寬裕舒適的空間，讓旅程擁抱幸福而不擁擠，宛如回家般，舒適共享幸福時光。</p>
+                <div class="col-12 cpl-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>豪華家庭房</h5>
+                            <p class="card-text">豪華客房<small class="text-muted">| 2大床</small></p>
+                            <p class="float-right text-danger">$ 3,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 cpl-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>豪華家庭房</h5>
+                            <p class="card-text">豪華山景房<small class="text-muted">| 1大床 2小床</small></p>
+                            <p class="float-right text-danger">$ 3,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 cpl-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>豪華家庭房</h5>
+                            <p class="card-text">奢華海景房<small class="text-muted">| 1大床 2小床</small></p>
+                            <p class="float-right text-danger">$ 3,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row tab-pane fade" id="roomC">
+                <p class="col-12 text-muted my-5 text-center">
+                    俯瞰壯麗海景的落地窗前，擺放著設計師精心規劃獨立蛋型浴缸，窗外碧海藍天映入眼簾，伴隨前空萬里或是滿天星空，<br>
+                    用浪漫點綴兩人的私密時光，時而倚靠陽台開懷談天，時而大膽地來場天體浴，讓這趟旅行趣味無窮。
+                </p>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>蜜月湯屋</h5>
+                            <p class="card-text">山景蜜月湯屋<small class="text-muted">| 1大床queen size</small></p>
+                            <p class="float-right text-danger">$ 3,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://fakeimg.pl/300x200" class="card-img-top">
+                        <div class="card-body">
+                            <h5>蜜月湯屋</h5>
+                            <p class="card-text">海景蜜月湯屋<small class="text-muted">| 1大床king size</small></p>
+                            <p class="float-right text-danger">$ 3,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="roomPrice">
+                <div class="my-5">
+                    <h5 class="text-info">[精緻客房]</h5>
+                    <table class="table table-sm text-center">
+                        <thead>
+                            <tr>
+                                <th class="border-info">房型</th>
+                                <th class="border-info">平日</th>
+                                <th class="border-info">假日</th>
+                                <th class="border-info">連續國定假日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>精緻雙人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <th>雅致雙人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <th>溫馨四人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="my-5">
+                    <h5 class="text-info">[豪華家庭房]</h5>
+                    <table class="table table-sm text-center">
+                        <thead>
+                            <tr>
+                                <th class="border-info">房型</th>
+                                <th class="border-info">平日</th>
+                                <th class="border-info">假日</th>
+                                <th class="border-info">連續國定假日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>精緻雙人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <th>雅致雙人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <th>溫馨四人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="my-5">
+                    <h5 class="text-info">[蜜月湯屋]</h5>
+                    <table class="table table-sm text-center">
+                        <thead>
+                            <tr>
+                                <th class="border-info">房型</th>
+                                <th class="border-info">平日</th>
+                                <th class="border-info">假日</th>
+                                <th class="border-info">連續國定假日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>精緻雙人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <th>雅致雙人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <th>溫馨四人房</th>
+                                <td>$1,999</td>
+                                <td>$3,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="roomRule">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+                molestiae fugiat sed similique optio. Dignissimos unde cupiditate quidem corrupti suscipit.</div>
+        </aritile>
+    </section>
+    <!-- 服務設施 -->
+    <section id="facility" class="py-5 text-white">
+        <header class="text-center container">
+            <h2 class="text-info pb-3">服務設施</h2>
+        </header>
+        <article class="container px-0">
+            <ul class="row list-unstyled">
+                <li class="media flex-column align-items-center flex-sm-row col-lg-6 mb-4">
+                    <!-- media是flex box -->
+                    <img src="https://fakeimg.pl/300x300" class="pb-3 col-sm-6">
+                    <div class="media-body col-sm-6">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p class="border-bottom border-info pb-3">inia congue felis in faucibusfelis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="media flex-column align-items-center flex-sm-row col-lg-6 mb-4">
+                    <img src="https://fakeimg.pl/300x300" class="pb-3 col-sm-6">
+                    <div class="media-body col-sm-6">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p class="border-bottom border-info pb-3">Cras congue felis in faucibusfelis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="media flex-column align-items-center flex-sm-row col-lg-6 mb-4">
+                    <img src="https://fakeimg.pl/300x300" class="pb-3 col-sm-6">
+                    <div class="media-body col-sm-6">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p class="border-bottom border-info pb-3">Cras congue felis in faucibusfelis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="media flex-column align-items-center flex-sm-row col-lg-6 mb-4">
+                    <img src="https://fakeimg.pl/300x300" class="pb-3 col-sm-6">
+                    <div class="media-body col-sm-6">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p class="border-bottom border-info pb-3">Cras congue felis in faucibusfelis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="media flex-column align-items-center flex-sm-row col-lg-6 mb-4">
+                    <img src="https://fakeimg.pl/300x300" class="pb-3 col-sm-6">
+                    <div class="media-body col-sm-6">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p class="border-bottom border-info pb-3">Cras congue felis in faucibusfelis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="media flex-column align-items-center flex-sm-row col-lg-6 mb-4">
+                    <img src="https://fakeimg.pl/300x300" class="pb-3 col-sm-6">
+                    <div class="media-body col-sm-6">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p class="border-bottom border-info pb-3">Cras congue felis in faucibusfelis in faucibus.</p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <!-- 餐飲美食 -->
+    <section id="food" class="container py-5">
+        <header class="text-center">
+            <h2 class="text-info pb-3">餐飲美食</h2>
+        </header>
+        <article class="py-5 row">
+            <!-- tab content 結合 accordion -->
+            <!-- tab content -->
+            <div class="tab-content col-12 col-lg-6 mb-3" id="nav-tabContent">
+                <img src="https://picsum.photos/600/400/?random=1" class="w-100 img-thumbnail tab-pane fade show active"
+                    id="image1">
+                <img src="https://picsum.photos/600/400/?random=2" class="w-100 img-thumbnail tab-pane fade"
+                    id="image2">
+                <img src="https://picsum.photos/600/400/?random=3" class="w-100 img-thumbnail tab-pane fade"
+                    id="image3">
+            </div>
+            <!-- accordion -->
+            <div class="accordion list-group px-3 col-12 col-lg-6" id="menu">
+                <div class="card" data-toggle="list" data-target="#image1">
+                    <a href="#msg1" class="h5 card-header text-decoration-none alert-info" data-toggle="collapse">Item
+                        #1 <small class="text-muted float-right">at floor2</small></a>
+                    <div id="msg1" class="collapse show" data-parent="#menu">
+                        <div class="card-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit,
+                            </p>
+                            <p class="text-danger float-right">
+                                定價：大人 NT500 / 小孩 NT300
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-toggle="list" data-target="#image2">
+                    <a href="#msg2" class="h5 card-header text-decoration-none alert-info" data-toggle="collapse">Item
+                        #2 <small class="text-muted float-right">at floor2</small></a>
+                    <div id="msg2" class="collapse" data-parent="#menu">
+                        <div class="card-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit,
+                            </p>
+                            <p class="text-danger float-right">
+                                定價：大人 NT500 / 小孩 NT300
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-toggle="list" data-target="#image3">
+                    <a href="#msg3" class="h5 card-header text-decoration-none alert-info" data-toggle="collapse">Item
+                        #3 <small class="text-muted float-right">at floor2</small></a>
+                    <div id="msg3" class="collapse" aria-labelledby="headingThree" data-parent="#menu">
+                        <div class="card-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit,
+                            </p>
+                            <p class="text-danger float-right">
+                                定價：大人 NT500 / 小孩 NT300
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- 交通資訊 -->
+    <section id="trans" class="embed-responsive py-5">
+        <iframe class="embed-responsive-item" allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.922313241192!2d121.40257551977537!3d25.051695650000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1606440606760!5m2!1szh-TW!2stw"></iframe>
+        <article class="container py-5">
+            <!-- 兩張col-6的card垂直排列，可以用flex-column，或是多開一個空的div.col-12 -->
+            <div class="row flex-column">
+                <header class="col-12 col-lg-6 text-center">
+                    <h2 class="card text-info py-3">交通資訊</h2>
+                </header>
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <strong>公車、捷運</strong>
+                            <ul class="pl-4">
+                                <li>公車：三重客運(637、638)、指南客運(797、798、801、858、880、883、1501、1503)，至明志科技大學站下車。</li>
+                                <li>新北市泰山區免費公車(泰山區F216明志國小-台北車站(北三門搭車))：至貴子路下車後，步行至貴子路口左轉明志路3段，明志路直行約100公尺至工專路右轉，再直行即可至明志科技大學。
+                                </li>
+                                <li>捷運：臺北捷運中和新蘆線至丹鳳站1號出口或桃園捷運機場線至泰山貴和站（明志科大）1號出口，再轉乘公車或騎乘YouBike微笑單車（約10~15分鐘）至明志科技大學。
+                                </li>
+                            </ul>
+                            <strong>自行開車</strong>
+                            <ul class="pl-4">
+                                <li>高速公路五股交流道下(往新莊、泰山)，經新五路至新北大道右轉，直行至貴子路口右轉，貴子路直行至明志路左轉。於明志路繼續前行約100公尺右轉工專路，即可抵達明科技大學。
+                                </li>
+                                <li>由台北車站走忠孝橋，直行高架道路，下到平面道路之後直行至貴子路口右轉，貴子路直行至明志路左轉，於明志路繼續前行約100公尺右轉工專路，即可抵達明科技大學。</li>
+                                <li>明志科大「汽車」停車費30元/小時，請儘量搭乘大眾交通工具或機車(免停車費)。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+    </section>
+    <!-- 聯絡我們 -->
+    <section id="contact" class="bg-dark py-5 text-white">
+        <header class="container text-center">
+            <h2 class="text-info pb-3">聯絡我們</h2>
+        </header>
+        <article class="container py-5">
+            <form class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="name">訪客姓名</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="c1" value="male">
+                                    <label class="custom-control-label" for="c1">男生</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="c2" value="female">
+                                    <label class="custom-control-label" for="c2">女生</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="">連絡電話</label>
+                    <input type="number" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="">電子信箱</label>
+                    <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="">問題類型</label>
+                    <select name="" id="" class="custom-select">
+                        <option selected>住宿相關</option>
+                        <option>住宿相關</option>
+                        <option>住宿相關</option>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <label for="">問題類型</label>
+                    <textarea name="" rows="3" class="form-control" placeholder="write something"></textarea>
+                </div>
+                <div class="form-group col-12 text-center">
+                    <small class="text-muted">請如實回答</small>
+                    <hr class="border-secondary mx-5">
+                    <button type="submit" class="btn btn-primary">確認送出</button>
+                </div>
+
+            </form>
+        </article>
+    </section>
+    <footer class="bg-dark text-muted text-center py-2" id="foot">
+        <!-- margin 不含背景色 -->
+        <small>泰山職訓中心課程教材練習<br> copyright &#169; <span class="text-warning">05xxx設計</span> . All right reserved </small>
+        <a href="#Slider" class="btn btn-outline-info position-fixed animate__animated animate__bounce" id="top">
+            <i class="far fa-arrow-alt-circle-up fa-2x"></i> <!-- font awesome的放大係數 -->
+        </a>
+    </footer>
+</body>
+
+</html>
